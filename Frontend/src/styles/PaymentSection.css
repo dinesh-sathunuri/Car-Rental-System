@@ -1,0 +1,71 @@
+.payment-section {
+  margin-top: 30px;
+  padding: 20px 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border-left: 5px solid #2a9d8f;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.payment-section h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.payment-section p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.payment-section label {
+  display: block;
+  margin: 15px 0 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.payment-section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.payment-section select:focus {
+  border-color: #2a9d8f;
+  outline: none;
+}
+
+.payment-section button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-section button:hover {
+  background-color: #21867a;
+}
+
+.payment-section button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.payment-status {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #e76f51;
+}

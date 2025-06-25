@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Left side (Brand name) */
+.navbar-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Navigation links */
+.navbar-right-pages {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-page-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-page-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.navbar-page-link:hover {
+  color: #007bff;
+}
+
+.navbar-page-link:hover::after {
+  width: 100%;
+}
+
+/* Auth buttons */
+.navbar-right-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.navbar-login,
+.navbar-signup {
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-login {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.navbar-login:hover {
+  background-color: #eaf4ff;
+}
+
+.navbar-signup {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.navbar-signup:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown container */
+.navbar-dropdown-menu {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 180px;
+  padding: 0.25rem 0;
+  z-index: 110;
+  font-size: 0.95rem;
+}
+
+/* Dropdown links */
+.navbar-dropdown-item {
+  display: block;
+  padding: 0.6rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.navbar-dropdown-item:hover {
+  background-color: #eaf4ff;
+  color: #007bff;
+}
+
+/* Logout button inside dropdown */
+.navbar-dropdown-menu button {
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 0 6px 6px;
+  transition: background-color 0.25s ease;
+}
+
+.navbar-dropdown-menu button:hover {
+  background-color: #b02a37;
+}
+
+/* Style user email button */
+.navbar-user-email {
+  font-weight: 600;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
